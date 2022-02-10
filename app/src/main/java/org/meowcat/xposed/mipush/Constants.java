@@ -4,13 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 public final class Constants {
-    public static final String TAG = "MiPushEnhancement";
+    public static final String TAG = "test_HWPushEnhancement";
 
     // Fake Xiaomi brand
     // This will be used in both Build.MANUFACTURER and system prop ro.product.manufacturuer.
     // This will be used in both Build.BRAND and system prop ro.product.brand.
     // This will be used in both Build.PRODUCT and system prop ro.product.name.
-    public static final String BRAND = "Xiaomi";
+    public static final String BRAND = "HUAWEI";
 
     public static final String MODE_WHITE = "whitelist";
     public static final String MODE_BLACK = "blacklist";
@@ -34,10 +34,6 @@ public final class Constants {
     }; // UserHandle.isCore(uid) will auto pass
 
     static {
-        // Fake MIUI 12 props
-        PROPS.put("ro.miui.ui.version.name", "V12");
-        PROPS.put("ro.miui.ui.version.code", "10");
-        PROPS.put("ro.miui.version.code_time", "1592409600");
         // Fake Xiaomi brand
         PROPS.put("ro.product.manufacturer", BRAND);
         PROPS.put("ro.product.vendor.manufacturer", BRAND);
